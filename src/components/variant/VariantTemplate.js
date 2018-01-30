@@ -9,31 +9,22 @@ import {OPTIONS} from "../../constants/constants";
 
 class VariantTemplate extends Component {
     render() {
-        // let {product, handleSubmit, updateStatus, edited} = this.props;
-        //
-        // if (product.length < 0) {
-        //     return (
-        //         <Loading/>
-        //     )
-        // }
-        //
-        // console.log(product);
-
         return (
             <div>
                 <div>
                     <Field
                         tagName='input'
-                        className="field-size"
-                        name="variantImgPath"
-                        id='variantImgPath'
-                        type="url"
-                        htmlFor='variantImgPath'
-                        placeholder="http://domain/products/prod-url"
+                        name="variantImagePath"
+                        id='variantImagePath'
+                        className='field-size'
+                        type="text"
+                        htmlFor='variantImagePath'
+                        placeholder='Variant Image Path'
                         label='Variant Image Path'
                         component={renderField}
                     />
                 </div>
+                <br />
                 <div>
                     <Field
                         tagName='input'
@@ -79,19 +70,21 @@ class VariantTemplate extends Component {
     }
 }
 
-export default reduxForm({
-    form: 'variant',
-    // validate,
-    // initialValues: {
-    //     name: 'watch',
-    //     path: '',
-    //     description: 'some description',
-    //     price: 12,
-    //     quantity: 12,
-    //     status: 'Aactive',
-    //
-    // }
-})(VariantTemplate)
+export default VariantTemplate
+
+// export default reduxForm({
+//     form: 'variant',
+//     // validate,
+//     // initialValues: {
+//     //     name: 'watch',
+//     //     path: '',
+//     //     description: 'some description',
+//     //     price: 12,
+//     //     quantity: 12,
+//     //     status: 'Aactive',
+//     //
+//     // }
+// })(VariantTemplate)
 //
 // setTimeout(() => {
 //     this.props.navigation.navigate("NewGame");

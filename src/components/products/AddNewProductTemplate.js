@@ -6,6 +6,7 @@ import {renderField, selectField} from '../../tag-creator/TagCreator';
 import validate from '../../validators/addNewProduct';
 import {OPTIONS} from '../../constants/constants';
 import Variant from '../../components/variant/Variant';
+import AddVariantForm from '../../containers/AddVariantForm';
 
 class AddNewProductTemplate extends Component {
     constructor() {
@@ -126,11 +127,11 @@ class AddNewProductTemplate extends Component {
                     </div>
                     <div>
                         {
-                            this.state.isChecked && <Variant />
+                            this.state.isChecked && <AddVariantForm />
                         }
                     </div>
                     <p className="">
-                        <input type="submit" value="Add Item"/>
+                        <input type="submit" value="Add Item" className='btn btn-primary'/>
                     </p>
                     {
                         isAdded === true && <Redirect to={`/products/products-list`}/>

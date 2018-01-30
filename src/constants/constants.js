@@ -19,4 +19,7 @@ export const ADD_NEW_PRODUCT = 'ADD_NEW_PRODUCT';
 export const SINGLE_PRODUCT = 'SINGLE_PRODUCT';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 
+export const ADD_VARIANT_FORM = 'ADD_VARIANT_FORM';
+export const REMOVE_VARIANT_FORM = 'REMOVE_VARIANT_FORM';
+
 export const OPTIONS = {active: 'Active', inactive: 'Inactive'};
