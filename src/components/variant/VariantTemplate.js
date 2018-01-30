@@ -24,6 +24,19 @@ class VariantTemplate extends Component {
                 <div>
                     <Field
                         tagName='input'
+                        className="field-size"
+                        name="variantImgPath"
+                        id='variantImgPath'
+                        type="url"
+                        htmlFor='variantImgPath'
+                        placeholder="http://domain/products/prod-url"
+                        label='Variant Image Path'
+                        component={renderField}
+                    />
+                </div>
+                <div>
+                    <Field
+                        tagName='input'
                         name="variantName"
                         id='variantName'
                         className='field-size'
