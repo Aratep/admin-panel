@@ -57,7 +57,7 @@ class LoginTemplate extends Component {
                             </form>
                         </div>
                         {
-                            redirectToReferrer === true && <Redirect to={from}/>
+                            redirectToReferrer && <Redirect to={from}/>
                         }
                     </div>
                 </div>
