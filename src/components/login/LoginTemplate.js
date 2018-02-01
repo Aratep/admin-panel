@@ -7,8 +7,8 @@ import validate from '../../validators/admin';
 
 class LoginTemplate extends Component {
     render() {
-        const {handleSubmit, loginStatus, redirectToReferrer, from} = this.props;
-        console.log(redirectToReferrer);
+        const {handleSubmit, loginStatus, redirectToReferrer} = this.props;
+        // console.log(redirectToReferrer);
 
 
         return (

@@ -8,7 +8,9 @@ import {
     UPDATE_PRODUCT_URL,
     DELETE_PRODUCT_URL,
     PRODUCTS_LIST_URL,
-    ADMIN_LOGIN_URL
+    ADMIN_LOGIN_URL,
+    tokenToVerify,
+    GET_CART_LIST_URL
 } from '../constants/constants';
 
 export const createProduct = (body) => {
@@ -43,6 +45,13 @@ export const updateItem = (body) => {
     })
 }
 
+export const getCartList = (body) => {
+    return fetch(GET_CART_LIST_URL, {
+        method: POST,
+        headers: HEADERS,
+        body: body
+    })
+};
 
 // export const deleteUser = (body) => {
 //     return fetch(DELETE_USER_URL, {
@@ -54,7 +63,8 @@ export const updateItem = (body) => {
 
 export const getAllProducts = () => {
     return fetch(PRODUCTS_LIST_URL, {
-        method: GET
+        method: GET,
+        headers: {'x-access-token': tokenToVerify}
     })
 }
 

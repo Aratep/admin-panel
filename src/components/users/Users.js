@@ -1,47 +1,75 @@
 import React, {Component} from 'react';
 import jwt from 'jsonwebtoken';
+import ReactLoading from 'react-loading';
+import {Link} from 'react-router-dom';
 
 import {getAllUsers} from '../../services/users-service';
+import {allUsers} from '../../actions/index';
 
 class Users extends Component {
-    constructor() {
-        super();
-
-
-    }
-
     componentDidMount() {
-        // const {dispatch} = this.props;
+        const {dispatch} = this.props;
 
         getAllUsers()
             .then(response => {
-                // console.log(response);
                 return response.json()
             })
             .then(body => {
-                // console.log(body)
                 if (body.token) {
                     jwt.verify(body.token, 'secret_key', (err, users) => {
                         if (err) console.log(err);
-                        console.log(users)
-                        // dispatch(allUsers(decoded.users, decoded.countOfUsers))
+                        dispatch(allUsers(users.users, users.countOfUsers))
                     })
                 }
             })
             .catch(err => {
                 console.log(err)
             });
-        // setTimeout(function () {
-        //     localStorage.removeItem('_token');
-        //     return <Redirect to='/login' />
-        // }, 5000);
     }
 
 
-
     render() {
+        const {users} = this.props;
+
+        if (users.length <= 0) {
+            return <ReactLoading color='black'/>
+        }
+
         return (
-           <div>Users</div>
+            <div className="">
+                <h3>
+                    All Users ({users.count})
+                </h3>
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Registered</th>
+                        <th>User Cart</th>
+                    </tr>
+                    </thead>
+
+                    {Object.values(users).map(users => (
+                        Object.values(users).map((user, index) => {
+                            return <tbody key={index}>
+                            <tr>
+                                <td>{index + 1}</td>
+                                <td>{user.username}</td>
+                                <td>{user.email}</td>
+                                <td>{user.created}</td>
+                                <td>
+                                    <Link to={`/user-cart/${user._id}`} className="btn btn-success">
+                                        Cart
+                                    </Link>
+                                </td>
+                            </tr>
+                            </tbody>
+                        })
+                    ))}
+                </table>
+            </div>
         );
     }
 }

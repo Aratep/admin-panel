@@ -4,7 +4,9 @@ import {
     REMOVE_PRODUCT,
     SINGLE_PRODUCT,
     ADD_VARIANT_FORM,
-    REMOVE_VARIANT_FORM
+    REMOVE_VARIANT_FORM,
+    ALL_USERS,
+    USER_PRODUCTS
 } from '../constants/constants';
 
 let nextProdId = 0;
@@ -54,3 +56,18 @@ export function removeVariantForm(id) {
         id
     }
 }
+
+export const allUsers = (users, count) => {
+    return {
+        type: ALL_USERS,
+        users,
+        count
+    }
+};
+
+export const userProducts = (userProducts) => {
+    return {
+        type: USER_PRODUCTS,
+        userProducts
+    }
+};

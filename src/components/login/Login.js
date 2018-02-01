@@ -26,7 +26,6 @@ class Login extends Component {
                 return response.json()
             })
             .then(body => {
-                console.log(body.token);
                 localStorage.setItem('tokenToVerify', body.token)
             })
             .catch(err => {
@@ -36,7 +35,6 @@ class Login extends Component {
 
 
     handleSubmit = (values, dispatch) => {
-        // console.log(values)
         adminLogin(JSON.stringify(values))
             .then(response => {
                 if (response.status === 200) {

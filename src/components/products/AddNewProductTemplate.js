@@ -5,7 +5,7 @@ import {Redirect} from 'react-router-dom'
 import {renderField, selectField} from '../../tag-creator/TagCreator';
 import validate from '../../validators/addNewProduct';
 import {OPTIONS} from '../../constants/constants';
-import Variant from '../../components/variant/Variant';
+// import Variant from '../../components/variant/Variant';
 import AddVariantForm from '../../containers/AddVariantForm';
 
 class AddNewProductTemplate extends Component {

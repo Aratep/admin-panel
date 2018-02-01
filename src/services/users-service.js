@@ -1,6 +1,7 @@
 import {
     GET,
-    ALL_USERS_URL, tokenToVerify,
+    ALL_USERS_URL,
+    tokenToVerify,
 } from '../constants/constants';
 
 

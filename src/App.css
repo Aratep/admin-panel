@@ -79,6 +79,17 @@ label {
     float: left;
 }
 
+.floating-box {
+    float: left;
+    margin: 10px;
+}
+
+.after-box {
+    /*float: left;*/
+    bottom: 0;
+    display: inline;
+}
+
 /*label:after { content: ": " }*/
 .validation-error {
     color: red;

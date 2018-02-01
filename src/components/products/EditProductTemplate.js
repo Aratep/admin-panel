@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link, Redirect} from 'react-router-dom';
 import {reduxForm, Field} from 'redux-form';
+import ReactLoading from 'react-loading';
 
-import Loading from '../loading/Loading';
 import {renderField, selectField} from "../../tag-creator/TagCreator";
 import validate from '../../validators/updateItem';
 
@@ -16,9 +16,7 @@ class EditProductTemplate extends Component {
         let {product, handleSubmit, updateStatus, edited} = this.props;
 
         if (product.length < 0) {
-            return (
-                <Loading/>
-            )
+            return <ReactLoading color='black'/>
         }
 
         console.log(product);

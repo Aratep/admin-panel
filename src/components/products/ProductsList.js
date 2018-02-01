@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import ReactLoading from 'react-loading';
 
 import {getAllProducts, deleteProduct} from '../../services/products-service';
 import {allProducts, removeProduct} from '../../actions/index';
-import Loading from '../../components/loading/Loading';
 
 class ProductsList extends Component {
 
@@ -19,7 +19,6 @@ class ProductsList extends Component {
                 return response.json();
             })
             .then(products => {
-                console.log(products);
                 dispatch(allProducts(products.products, products.count))
             })
             .catch((err) => {
@@ -28,7 +27,6 @@ class ProductsList extends Component {
     }
 
     deleteSingleProduct = (id) => {
-        console.log(id);
         const {dispatch} = this.props;
 
         deleteProduct(JSON.stringify({id}))
@@ -48,9 +46,8 @@ class ProductsList extends Component {
         const {products} = this.props;
 
         if (products.length <= 0) {
-            return <Loading/>
+            return <ReactLoading color='black'/>
         }
-        // console.log(products);
         return (
             <div className="">
                 <h3>

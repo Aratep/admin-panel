@@ -44,7 +44,6 @@ class NavBar extends Component {
                               style={{width: 25 + '% !important'}}>USERS</Link>
                         {
                             adminToken && <div className="w3-bar-item w3-button w3-padding-large">
-                                {/*<i className="fa fa-sign-out w3-xxlarge"/>*/}
                                 <p><AuthButton/></p>
                             </div>
                         }

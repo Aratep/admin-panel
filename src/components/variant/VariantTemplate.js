@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import {Link, Redirect} from 'react-router-dom';
-import {reduxForm, Field} from 'redux-form';
+import { Field} from 'redux-form';
 
 // import Loading from '../loading/Loading';
 import {renderField, selectField} from "../../tag-creator/TagCreator";
