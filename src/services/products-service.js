@@ -1,6 +1,3 @@
-// import React from 'react';
-// import {withRouter} from 'react-router-dom';
-
 import {
     POST,
     PUT,
@@ -13,13 +10,6 @@ import {
     PRODUCTS_LIST_URL,
     ADMIN_LOGIN_URL
 } from '../constants/constants';
-
-// export const AuthButton =  withRouter(({history}) => (
-//     <a className='pointer' onClick={() => {
-//         localStorage.removeItem('_token');
-//         return history.push('/login')
-//     }}>Sign Out</a>
-// ));
 
 export const createProduct = (body) => {
     return fetch(CREATE_PRODUCT_URL, {

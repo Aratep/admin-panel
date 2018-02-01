@@ -1,3 +1,5 @@
+export const tokenToVerify = localStorage.getItem('tokenToVerify');
+
 export const POST = 'POST';
 export const GET = 'GET';
 export const PUT = 'PUT';
@@ -13,7 +15,9 @@ export const UPDATE_PRODUCT_URL = 'http://localhost:8080/products/update';
 export const DELETE_PRODUCT_URL = 'http://localhost:8080/products/delete';
 export const PRODUCTS_LIST_URL = 'http://localhost:8080/products/products-list';
 export const ADMIN_LOGIN_URL = 'http://localhost:8080/admin/login';
-//localhost:8080/admin/login REMOVE_PRODUCT
+export const ALL_USERS_URL = 'http://localhost:8080/users/all-users';
+export const TOKEN_URL = 'http://localhost:8080/users/token';
+
 export const ALL_PRODUCTS = 'ALL_PRODUCTS';
 export const ADD_NEW_PRODUCT = 'ADD_NEW_PRODUCT';
 export const SINGLE_PRODUCT = 'SINGLE_PRODUCT';

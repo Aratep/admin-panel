@@ -57,7 +57,7 @@ class LoginTemplate extends Component {
                             </form>
                         </div>
                         {
-                            redirectToReferrer && <Redirect to={from}/>
+                            redirectToReferrer && <Redirect to='/products/products-list'/>
                         }
                     </div>
                 </div>

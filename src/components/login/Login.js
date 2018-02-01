@@ -1,22 +1,41 @@
 import React, {Component} from 'react';
 import {reset} from 'redux-form';
-import {Redirect} from 'react-router-dom';
 
 import LoginTemplate from './LoginTemplate';
 import {adminLogin} from '../../services/products-service';
+import {getToken} from "../../services/auth-service";
 
 class Login extends Component {
     constructor() {
         super();
 
         this.state = {
+            token: null,
             loginStatus: '',
             redirectToReferrer: false
         }
     }
 
+    componentWillMount() {
+        this.getApiToken();
+    }
+
+    getApiToken = () => {
+        getToken()
+            .then(response => {
+                return response.json()
+            })
+            .then(body => {
+                console.log(body.token);
+                localStorage.setItem('tokenToVerify', body.token)
+            })
+            .catch(err => {
+                console.log(err)
+            });
+    };
+
+
     handleSubmit = (values, dispatch) => {
-        const {from} = this.props.location.state || {from: {pathname: '/products/products-list'}};
         // console.log(values)
         adminLogin(JSON.stringify(values))
             .then(response => {
@@ -26,9 +45,6 @@ class Login extends Component {
                         loginStatus: '',
                         redirectToReferrer: true
                     })
-                    // if(this.state.redirectToReferrer === true) {
-                    //     return <Redirect to={from} />
-                    // }
                 }
                 return response.json()
             })
