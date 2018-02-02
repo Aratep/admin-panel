@@ -115,21 +115,7 @@ class AddNewProductTemplate extends Component {
                         />
                         <br/>
                     </div>
-                    <div>
-                        <label htmlFor='chb'>Has Variant?</label>
-                        <input type="checkbox"
-                               className='chb'
-                               id='chb'
-                               checked={this.state.isChecked}
-                               onChange={this.toggleChange}
-                        />
-                        <br/>
-                    </div>
-                    <div>
-                        {
-                            this.state.isChecked && <AddVariantForm />
-                        }
-                    </div>
+
                     <p className="">
                         <input type="submit" value="Add Item" className='btn btn-primary'/>
                     </p>

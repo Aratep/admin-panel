@@ -4,18 +4,21 @@ import {reset} from 'redux-form';
 import EditProductTemplate from "./EditProductTemplate";
 import {getAllProducts, updateItem} from '../../services/products-service';
 import {singleProduct} from '../../actions/index';
+import {getToken} from "../../services/auth-service";
 
 class EditProduct extends Component {
     constructor() {
         super();
 
         this.state = {
+            token: null,
             updateStatus: '',
             edited: false
         }
     }
 
     componentDidMount() {
+        this.getApiToken();
         let product;
         const {dispatch} = this.props;
 
@@ -34,11 +37,24 @@ class EditProduct extends Component {
             });
     }
 
+    getApiToken = () => {
+        getToken()
+            .then(response => {
+                return response.json()
+            })
+            .then(body => {
+                this.setState({token: body.token})
+            })
+            .catch(err => {
+                console.log(err)
+            });
+    }
+
     handleSubmit = (values, dispatch) => {
         const id = this.props.match.params.id;
-        console.log(values)
+        const {token} = this.state;
 
-        updateItem(JSON.stringify({values, id}))
+        updateItem(JSON.stringify({values, id, token}))
             .then(response => {
                 console.log(response)
                 if (response.status === 200) {

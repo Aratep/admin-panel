@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // import {Link, Redirect} from 'react-router-dom';
-import { Field} from 'redux-form';
+import {reduxForm, Field} from 'redux-form';
 
 // import Loading from '../loading/Loading';
 import {renderField, selectField} from "../../tag-creator/TagCreator";
@@ -70,21 +70,21 @@ class VariantTemplate extends Component {
     }
 }
 
-export default VariantTemplate
+// export default VariantTemplate
 
-// export default reduxForm({
-//     form: 'variant',
-//     // validate,
-//     // initialValues: {
-//     //     name: 'watch',
-//     //     path: '',
-//     //     description: 'some description',
-//     //     price: 12,
-//     //     quantity: 12,
-//     //     status: 'Aactive',
-//     //
-//     // }
-// })(VariantTemplate)
+export default reduxForm({
+    form: 'variant',
+    // validate,
+    // initialValues: {
+    //     name: 'watch',
+    //     path: '',
+    //     description: 'some description',
+    //     price: 12,
+    //     quantity: 12,
+    //     status: 'Aactive',
+    //
+    // }
+})(VariantTemplate)
 //
 // setTimeout(() => {
 //     this.props.navigation.navigate("NewGame");

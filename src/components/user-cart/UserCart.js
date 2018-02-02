@@ -42,7 +42,7 @@ class UserCart extends Component {
                 {
                     userProducts.map((prod, index) => {
 
-                        return <div key={index} className='floating-box'>
+                        return <div key={index} className='box'>
                             <div>
                                 <h2>{prod.name}</h2>
                                 <div className=''>

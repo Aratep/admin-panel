@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-// import {Link, Redirect} from 'react-router-dom';
 import {Field} from 'redux-form';
 
 import VariantTemplate from './VariantTemplate';
 import {renderField, selectField} from "../../tag-creator/TagCreator";
-// import validate from '../../validators/updateItem';
 import {OPTIONS} from "../../constants/constants";
 import {addVariantForm, removeVariantForm} from '../../actions/index';
 
@@ -22,16 +20,7 @@ class Variant extends Component {
     }
 
     render() {
-        // let {product, handleSubmit, updateStatus, edited} = this.props;
-        //
-        // if (product.length < 0) {
-        //     return (
-        //         <Loading/>
-        //     )
-        // }
-        //
         const {variantForm} = this.props;
-        console.log(variantForm);
 
         return (
             <div>

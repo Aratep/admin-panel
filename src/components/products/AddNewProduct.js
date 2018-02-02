@@ -3,24 +3,42 @@ import {reset} from 'redux-form';
 
 import AddNewProductTemplate from './AddNewProductTemplate';
 import {createProduct} from '../../services/products-service';
-// import {addProduct} from '../../actions/index';
+import {getToken} from '../../services/auth-service';
 
 class AddNewProduct extends Component {
     constructor() {
         super();
 
         this.state = {
+            token: '',
             addStatus: '',
             isAdded: false,
             hasEmail: false
         }
     }
 
+    componentDidMount = () => {
+        this.getApiToken();
+    }
+
+    getApiToken = () => {
+        getToken()
+            .then(response => {
+                return response.json()
+            })
+            .then(body => {
+                this.setState({token: body.token})
+            })
+            .catch(err => {
+                console.log(err)
+            });
+    }
+
     handleSubmit = (values, dispatch) => {
-        // const {reset} = this.props;
+        const {token} = this.state;
         console.log(values);
 
-        createProduct(JSON.stringify(values))
+        createProduct(JSON.stringify({values, token}))
             .then(response => {
                 console.log(response.status)
                 if (response.status === 200) {

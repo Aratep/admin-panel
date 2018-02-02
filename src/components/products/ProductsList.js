@@ -4,11 +4,31 @@ import ReactLoading from 'react-loading';
 
 import {getAllProducts, deleteProduct} from '../../services/products-service';
 import {allProducts, removeProduct} from '../../actions/index';
+import {getToken} from "../../services/auth-service";
 
 class ProductsList extends Component {
-
+    constructor() {
+        super();
+        this.state = {
+            token: null
+        }
+    }
     componentDidMount() {
+        this.getApiToken();
         this.getProductsList();
+    }
+
+    getApiToken = () => {
+        getToken()
+            .then(response => {
+                return response.json()
+            })
+            .then(body => {
+                this.setState({token: body.token})
+            })
+            .catch(err => {
+                console.log(err)
+            });
     }
 
     getProductsList = () => {
@@ -28,8 +48,9 @@ class ProductsList extends Component {
 
     deleteSingleProduct = (id) => {
         const {dispatch} = this.props;
+        const {token} = this.state;
 
-        deleteProduct(JSON.stringify({id}))
+        deleteProduct(JSON.stringify({id, token}))
             .then(response => {
                 dispatch(removeProduct(id));
                 return response.json()
@@ -85,6 +106,9 @@ class ProductsList extends Component {
                                     </button>
                                     <Link to={`/products/product/${product._id}`} className="btn btn-success">
                                         <i className="fa fa-pencil fa-lg"/>
+                                    </Link>
+                                    <Link to={`/products/product/add-variants/${product._id}`} className="btn btn-success">
+                                        <i className="fa fa-plus fa-lg"/>
                                     </Link>
                                 </td>
                             </tr>

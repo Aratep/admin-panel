@@ -10,11 +10,20 @@ import {
     PRODUCTS_LIST_URL,
     ADMIN_LOGIN_URL,
     tokenToVerify,
-    GET_CART_LIST_URL
+    GET_CART_LIST_URL,
+    ADD_NEW_VARIANT_URL
 } from '../constants/constants';
 
 export const createProduct = (body) => {
     return fetch(CREATE_PRODUCT_URL, {
+        method: POST,
+        headers: HEADERS,
+        body: body
+    })
+};
+
+export const addNewVariant = (body) => {
+    return fetch(ADD_NEW_VARIANT_URL, {
         method: POST,
         headers: HEADERS,
         body: body

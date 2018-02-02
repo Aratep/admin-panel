@@ -16,7 +16,7 @@ class Login extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.getApiToken();
     }
 
@@ -39,10 +39,13 @@ class Login extends Component {
             .then(response => {
                 if (response.status === 200) {
                     dispatch(reset('login'));
-                    this.setState({
-                        loginStatus: '',
-                        redirectToReferrer: true
-                    })
+                    setTimeout(() => {
+                        this.setState({
+                            loginStatus: '',
+                            redirectToReferrer: true
+                        })
+                    }, 150)
+
                 }
                 return response.json()
             })
@@ -51,7 +54,6 @@ class Login extends Component {
                     loginStatus: body.message,
                 });
                 localStorage.setItem('adminToken', body.token);
-                console.log(body)
             })
             .catch(err => {
                 this.setState({

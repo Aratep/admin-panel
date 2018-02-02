@@ -47,7 +47,7 @@ class Users extends Component {
                         <th>Username</th>
                         <th>Email</th>
                         <th>Registered</th>
-                        <th>User Cart</th>
+                        <th>User's Cart</th>
                     </tr>
                     </thead>
 

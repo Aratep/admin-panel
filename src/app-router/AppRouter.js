@@ -5,7 +5,6 @@ import {PrivateRoute} from './PrivateRouter';
 import Dashboard from '../components/dashboard/Dashboard';
 import Products from '../components/products/Products';
 import Login from '../components/login/Login';
-// import Users from '../components/users/Users';
 import UsersContainer from '../containers/Users';
 import UserCartContainer from '../containers/UserCart';
 import {NoMatch} from '../components/no-match/NoMatch';
