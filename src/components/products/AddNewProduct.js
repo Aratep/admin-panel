@@ -43,10 +43,12 @@ class AddNewProduct extends Component {
                 console.log(response.status)
                 if (response.status === 200) {
                     dispatch(reset('addNewProduct'));
-                    this.setState({
-                        addStatus: '',
-                        isAdded: true
-                    })
+                    setTimeout(() => {
+                        this.setState({
+                            addStatus: '',
+                            isAdded: true
+                        })
+                    }, 150)
                 }
                 return response.json()
             })

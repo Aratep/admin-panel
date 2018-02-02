@@ -63,6 +63,11 @@ class ProductsList extends Component {
             });
     };
 
+    cutText = (string) => {
+        const length = 50;
+        return string.substring(0, length) + ' ...';
+    }
+
     render() {
         const {products} = this.props;
 
@@ -95,20 +100,20 @@ class ProductsList extends Component {
                                 <td>{index + 1}</td>
                                 <td>{product.name}</td>
                                 <td><img src={product.imagePath} alt={product.name} className='img-style'/></td>
-                                <td>{product.description}</td>
+                                <td>{this.cutText(product.description)}</td>
                                 <td>${product.price}</td>
                                 <td>{product.available_quantity}</td>
                                 <td>{product.status}</td>
                                 <td>
                                     <button className="btn btn-danger"
                                             onClick={this.deleteSingleProduct.bind(this, product._id)}>
-                                        <i className="fa fa-trash-o fa-lg"/>
+                                        <i className="fa fa-trash-o fa-sm"/>
                                     </button>
                                     <Link to={`/products/product/${product._id}`} className="btn btn-success">
-                                        <i className="fa fa-pencil fa-lg"/>
+                                        <i className="fa fa-pencil fa-sm"/>
                                     </Link>
                                     <Link to={`/products/product/add-variants/${product._id}`} className="btn btn-success">
-                                        <i className="fa fa-plus fa-lg"/>
+                                        <i className="fa fa-plus fa-sm"/>
                                     </Link>
                                 </td>
                             </tr>
