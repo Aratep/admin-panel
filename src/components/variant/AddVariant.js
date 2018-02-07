@@ -11,8 +11,7 @@ class AddVariant extends Component {
 
         this.state = {
             token: null,
-            updateStatus: '',
-            edited: false
+            idAdded: false
         }
     }
 
@@ -34,10 +33,21 @@ class AddVariant extends Component {
         addNewVariant(JSON.stringify({values, id, token}))
             .then(response => {
                 console.log(response)
+<<<<<<< HEAD
                 if(response.status === 200) {
                     dispatch(reset('addVariant'));
                 }
 
+=======
+                if (response.status === 200) {
+                    dispatch(reset('addVariant'));
+                    setTimeout(() => {
+                        this.setState({
+                            isAdded: true
+                        })
+                    }, 150)
+                }
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
                 return response.json()
             })
             .then(body => {
@@ -49,10 +59,19 @@ class AddVariant extends Component {
     }
 
     render() {
+<<<<<<< HEAD
+=======
+        const {isAdded} = this.state;
+
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         return (
             <div>
                 <AddVariantTemplate
                     onSubmit={this.handleSubmit}
+<<<<<<< HEAD
+=======
+                    isAdded={isAdded}
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
                 />
             </div>
         )

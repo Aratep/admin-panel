@@ -8,7 +8,18 @@ import {OPTIONS} from '../../constants/constants';
 
 class AddVariantTemplate extends Component {
     render() {
+<<<<<<< HEAD
         let {handleSubmit} = this.props;
+=======
+        // let {product, handleSubmit, updateStatus, edited} = this.props;
+        let {handleSubmit, isAdded} = this.props;
+        //
+        // if (product.length < 0) {
+        //     return <ReactLoading color='black'/>
+        // }
+        //
+        // console.log(product);
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
 
         return (
             <div>
@@ -71,6 +82,9 @@ class AddVariantTemplate extends Component {
                         <input type="submit" value="Add Variant" className='btn btn-primary'/>
                     </p>
                 </form>
+                {
+                    isAdded === true && <Redirect to={`/products/products-list`}/>
+                }
                 <Link to='/products/products-list'>Back</Link>
             </div>
         )

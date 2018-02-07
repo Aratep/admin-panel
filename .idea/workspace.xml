@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="633a059d-cc6c-4a76-91d5-2037591e7fb9" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js" afterPath="$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js" />
       <change beforePath="$PROJECT_DIR$/src/components/user-cart/UserCart.js" afterPath="$PROJECT_DIR$/src/components/user-cart/UserCart.js" />
@@ -11,6 +12,16 @@
       <change beforePath="$PROJECT_DIR$/src/components/variant/VariantTemplate.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/constants/constants.js" afterPath="$PROJECT_DIR$/src/constants/constants.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/AddVariantForm.js" afterPath="" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/loading/Loading.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/variant/Variant.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/variant/VariantTemplate.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/products/AddNewProduct.js" afterPath="$PROJECT_DIR$/src/components/products/AddNewProduct.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js" afterPath="$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/products/ProductsList.js" afterPath="$PROJECT_DIR$/src/components/products/ProductsList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/variant/AddVariant.js" afterPath="$PROJECT_DIR$/src/components/variant/AddVariant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js" afterPath="$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +38,105 @@
       <file leaf-file-name="ProductsList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/products/ProductsList.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="224">
               <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="55" />
+=======
+            <state relative-caret-position="165">
+              <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddNewProductTemplate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1189">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products-service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/products-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddVariant.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/variant/AddVariant.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddNewProduct.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/products/AddNewProduct.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddVariantTemplate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductsRouter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app-router/ProductsRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="e#124#189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
               <folding />
             </state>
           </provider>
@@ -66,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/services/users-service.js" />
         <option value="$PROJECT_DIR$/src/components/login/Login.js" />
-        <option value="$PROJECT_DIR$/src/components/products/AddNewProduct.js" />
         <option value="$PROJECT_DIR$/src/components/products/EditProduct.js" />
         <option value="$PROJECT_DIR$/src/components/login/LoginTemplate.js" />
         <option value="$PROJECT_DIR$/src/components/users/Users.js" />
@@ -74,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/header/NavBar.js" />
         <option value="$PROJECT_DIR$/src/services/auth-service.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/products/ProductsList.js" />
         <option value="$PROJECT_DIR$/src/app-router/ProductsRouter.js" />
         <option value="$PROJECT_DIR$/src/validators/addVariant.js" />
@@ -85,6 +193,19 @@
         <option value="$PROJECT_DIR$/src/components/variant/AddVariant.js" />
         <option value="$PROJECT_DIR$/src/constants/constants.js" />
         <option value="$PROJECT_DIR$/src/components/user-cart/UserCart.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/variant/Variant.js" />
+        <option value="$PROJECT_DIR$/src/components/variant/VariantTemplate.js" />
+        <option value="$PROJECT_DIR$/src/app-router/ProductsRouter.js" />
+        <option value="$PROJECT_DIR$/src/validators/addVariant.js" />
+        <option value="$PROJECT_DIR$/src/services/products-service.js" />
+        <option value="$PROJECT_DIR$/src/constants/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js" />
+        <option value="$PROJECT_DIR$/src/components/products/AddNewProduct.js" />
+        <option value="$PROJECT_DIR$/src/components/variant/AddVariant.js" />
+        <option value="$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js" />
+        <option value="$PROJECT_DIR$/src/components/products/ProductsList.js" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
       </list>
     </option>
   </component>
@@ -153,6 +274,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+            </path>
+            <path>
+              <item name="admin-panel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-panel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
             </path>
             <path>
               <item name="admin-panel" type="b2602c69:ProjectViewProjectNode" />
@@ -206,17 +337,26 @@
       <workItem from="1517395544008" duration="3699000" />
       <workItem from="1517472222556" duration="5797000" />
       <workItem from="1517490955280" duration="10333000" />
+<<<<<<< HEAD
       <workItem from="1517553800208" duration="12267000" />
       <workItem from="1517820244374" duration="599000" />
       <workItem from="1517917917465" duration="290000" />
       <workItem from="1517918687681" duration="766000" />
       <workItem from="1517985768086" duration="2600000" />
       <workItem from="1518004898501" duration="839000" />
+=======
+      <workItem from="1517553800208" duration="12099000" />
+      <workItem from="1517583576868" duration="3033000" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="45261000" />
+=======
+    <option name="totallyTimeSpent" value="43032000" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
@@ -224,7 +364,6 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18139893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -238,6 +377,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -271,6 +411,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2196">
           <caret line="129" column="25" lean-forward="false" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variant/VariantTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -316,6 +470,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="60" column="26" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="60" selection-end-column="26" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variant/VariantTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -356,10 +524,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/users.js" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/loading/Loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/loading/Loading.js" />
+    <entry file="file://$PROJECT_DIR$/src/app-router/PrivateRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -383,6 +562,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -391,6 +571,8 @@
         <state relative-caret-position="413">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
+=======
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -405,6 +587,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-cart/UserCart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -419,6 +611,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -436,18 +629,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/AddVariantForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/products/EditProduct.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="395">
           <caret line="54" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="26" />
+=======
+        <state relative-caret-position="-1260">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/products/EditProductTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="270">
           <caret line="129" column="62" lean-forward="true" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="62" />
         </state>
@@ -457,6 +674,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="342">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
@@ -486,20 +707,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/products/AddNewProductTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+        <state relative-caret-position="18">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1517583334032" expanded="true" signature="485:910" ph="&lt;div/&gt;" />
+            <marker date="1517583334032" expanded="true" signature="499:899" ph="&lt;Switch/&gt;" />
+          </folding>
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="18">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app-router/AppRouter.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
@@ -526,12 +762,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+=======
+        <state relative-caret-position="234">
+          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#124#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/addNewProduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/addVariant.js" />
+    <entry file="file://$PROJECT_DIR$/src/constants/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/auth-service.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="108">
           <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
@@ -544,11 +803,35 @@
           <folding>
             <element signature="e#0#276#0" expanded="false" />
           </folding>
+=======
+        <state relative-caret-position="18">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variant/AddVariantTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/user-cart/UserCart.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="342">
           <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding />
@@ -559,15 +842,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+=======
+        <state relative-caret-position="-1189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variant/VariantTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/products/ProductsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="55" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/products/AddNewProduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variant/AddVariant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/products/ProductsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+>>>>>>> d27bc82cdf2fc33b7462d6267b6ccca1734c3dcb
         </state>
       </provider>
     </entry>
