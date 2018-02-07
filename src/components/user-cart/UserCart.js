@@ -20,8 +20,9 @@ class UserCart extends Component {
                 return response.json()
             })
             .then(body => {
+                console.log(body)
                 //must be dispatch
-                dispatch(userProducts(body.userProduct))
+                dispatch(userProducts(body.userProducts))
             })
             .catch(err => {
                 console.log(err)

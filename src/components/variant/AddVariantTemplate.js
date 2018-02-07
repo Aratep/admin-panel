@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Link, Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {reduxForm, Field} from 'redux-form';
-import ReactLoading from 'react-loading';
 
 import {renderField, selectField} from "../../tag-creator/TagCreator";
 import validate from '../../validators/addVariant';
@@ -9,14 +8,7 @@ import {OPTIONS} from '../../constants/constants';
 
 class AddVariantTemplate extends Component {
     render() {
-        // let {product, handleSubmit, updateStatus, edited} = this.props;
         let {handleSubmit} = this.props;
-        //
-        // if (product.length < 0) {
-        //     return <ReactLoading color='black'/>
-        // }
-        //
-        // console.log(product);
 
         return (
             <div>
