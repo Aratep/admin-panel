@@ -70,7 +70,6 @@ class ProductsList extends Component {
 
     render() {
         const {products} = this.props;
-
         if (products.length <= 0) {
             return <ReactLoading color='black'/>
         }

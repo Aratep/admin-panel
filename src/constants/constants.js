@@ -5,6 +5,7 @@ export const GET = 'GET';
 export const PUT = 'PUT';
 export const DELETE = 'DELETE';
 export const HEADERS = {
+    'credentials': 'same-origin',
     'Accept': 'application/json',
     'Content-Type': 'application/json; charset=utf-8',
     'x-access-token': {tokenToVerify},
