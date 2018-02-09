@@ -8,7 +8,8 @@ import {
 export const getAllUsers = () => {
     return fetch(ALL_USERS_URL, {
         method: GET,
-        headers: {'x-access-token': tokenToVerify}
+        headers: {'x-access-token': tokenToVerify},
+        credentials: 'omit'
     })
 }
 
